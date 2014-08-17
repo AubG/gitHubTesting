@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class githubTester {
 	
 	boolean isSheABoob = false;
+	Scanner input = new Scanner(System.in);
 	
 	public githubTester(){
 		//Empty cause I said so
@@ -16,7 +17,6 @@ public class githubTester {
 	}
 	
 	public void setIsBoob(){
-		Scanner input = new Scanner(System.in);
 		String ans;
 		
 		System.out.println("Is she a boob? (True or False):");
@@ -29,8 +29,6 @@ public class githubTester {
 		} else {
 			System.out.print("Not valid answer, dumbass");
 		}
-		
-		input.close();
 	}
 	
 	public boolean getIsBoob(){
@@ -38,14 +36,13 @@ public class githubTester {
 	}
 
 	public void calculatorFun() {
-		Scanner input = new Scanner(System.in);
 		double x,y,z = 0;
 		boolean dumbass = false;
 		String operation;
 		
 		System.out.println("Input X and Y values: (ex: 55 4 or -350 57 et cetera)");
-		x = input.nextDouble();
-		y = input.nextDouble();
+		x = input.nextFloat();
+		y = input.nextFloat();
 		
 		System.out.println("Select Operation: + \\ - \\ * ");
 		operation = input.next();
@@ -71,8 +68,6 @@ public class githubTester {
 		} else {
 			System.out.println("Answer to: " + x + operation + y + " = " + "DUMBASSs");
 		}
-		
-		input.close();
 		
 	}
 }
