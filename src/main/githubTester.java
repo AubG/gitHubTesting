@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class githubTester {
 	
 	boolean isSheABoob = false;
+	//Changed Scanner to be global
 	Scanner input = new Scanner(System.in);
 	
 	public githubTester(){
