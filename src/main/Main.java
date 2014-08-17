@@ -10,5 +10,8 @@ public class Main {
 		//Running Test Class
 		test = new githubTester();		
 		test.init();
+		
+		//Setting up simple one operation calculator
+		test.calculatorFun();
 	}
 }

@@ -36,4 +36,43 @@ public class githubTester {
 	public boolean getIsBoob(){
 		return isSheABoob;
 	}
+
+	public void calculatorFun() {
+		Scanner input = new Scanner(System.in);
+		double x,y,z = 0;
+		boolean dumbass = false;
+		String operation;
+		
+		System.out.println("Input X and Y values: (ex: 55 4 or -350 57 et cetera)");
+		x = input.nextDouble();
+		y = input.nextDouble();
+		
+		System.out.println("Select Operation: + \\ - \\ * ");
+		operation = input.next();
+		
+		switch(operation){
+		case "+":
+			z = x + y;
+			break;
+		case "-":
+			z = x - y;
+			break;
+		case "*":
+			z = x * y;
+			break;
+		default:
+			System.out.println("Picked invalid operation, therefore you are dumbass");
+			
+			break;
+		}
+		
+		if(!dumbass){
+		System.out.println("Answer to: " + x + operation + y + " = " + z);
+		} else {
+			System.out.println("Answer to: " + x + operation + y + " = " + "DUMBASSs");
+		}
+		
+		input.close();
+		
+	}
 }
